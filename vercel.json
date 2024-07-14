@@ -19,4 +19,5 @@
         "dest": "{testproject}/wsgi.py"
     }
 ]
+    { "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
 }
