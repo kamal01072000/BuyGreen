@@ -1,0 +1,123 @@
+{%extends 'tapp/index.html'%}
+{%load static%}
+{% block title %}
+Farmproduct
+{% endblock title %}
+
+{%block content%}
+<div class="product-container">
+    <!-- FARM DETAILES -->
+    <div class="display-top" >
+        <div class="cover-img">
+            <img src="{%static 'images/slider3.png'%}" alt="alt" class="c-img">
+            <div class="farm-details">
+                <div class="farm-img">
+                    <div class="img-holder">
+                        <img width="100%"src="{%static 'images/farm2.jpg'%}" alt="alt" >
+                    </div>
+                </div>
+                <div class="farm-name">VKB FARMS 
+                <div class="farm-location"><i class="fa fa-thin fa-location-dot "></i>Mugalivakkam,Redhills-TN</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FARM PRODUCTS -->
+    <div class="farm-items">
+        <div class="product-catogry">
+            <div class="Category"> Category</div>
+            <ul>
+                <li>Vegetables</li>
+                <li>Dairy Products</li>
+                <li>Farm Basket</li>
+            </ul>
+        </div>
+        <div class="farm-products">
+            <div class="product-container">
+                <div class="products"><i class=" fa fa-duotone fa-wheat"></i>Farm Products</div>
+                <div class="product-detailes">
+                    <img src="{%static 'images/onion.jpg'%}" alt="" style="width: 100px;" class="product-img">
+                    <div class="product-name">Onion (Pyaaz)
+                    </div>
+                    <div class="product-qnt">1kg</div>
+
+                    <div class="product-price">80₹</div>
+                   <div class="add-cart-btn">
+                    <!-- <i class="fa-solid fa-minus minus"></i>
+                    <span>0</span>
+                    <i class="fa-solid fa-plus plus"></i> -->
+                    <!-- <i class=" fa  fa-cart-plus"></i> -->
+                    Add Cart
+                </div>
+                </div> 
+
+
+                <div class="product-detailes">
+                    <img src="{%static 'images/spinach.png'%}" alt="" style="width: 100px; "  class="product-img">
+                    <div class="product-name">Spinach
+                    </div>
+                    <div class="product-qnt">500g</div>
+
+                    <div class="product-price">40₹</div>
+                   <div class="add-cart-btn">
+                    <!-- <i class="fa-solid fa-minus minus"></i>
+                    <span>0</span>
+                    <i class="fa-solid fa-plus plus"></i> -->
+                    Add Cart
+                </div>
+                </div> 
+
+
+                <div class="product-detailes">
+                    <img src="{%static 'images/beans.png'%}" alt="" style="width: 100px; "  class="product-img">
+                    <div class="product-name">Beans
+                    </div>
+                    <div class="product-qnt">550g</div>
+
+                    <div class="product-price">32₹</div>
+                   <div class="add-cart-btn">
+                    <!-- <i class="fa-solid fa-minus minus"></i>
+                    <span>0</span>
+                    <i class="fa-solid fa-plus plus"></i> -->
+                    Add Cart
+                </div>
+                </div> 
+
+                <div class="product-detailes">
+                    <img src="{%static 'images/milk.jpg'%}" alt="" style="width: 100px; "  class="product-img">
+                    <div class="product-name">Milk(Farm Cow GIR)
+                    </div>
+                    <div class="product-qnt">1ltr</div>
+
+                    <div class="product-price">55₹</div>
+                   <div class="add-cart-btn">
+                    <!-- <i class="fa-solid fa-minus minus"></i>
+                    <span>0</span>
+                    <i class="fa-solid fa-plus plus"></i> -->
+                    Add Cart
+                </div>
+                </div> 
+
+                <div class="product-detailes">
+                    <img src="{%static 'images/gee.jpg'%}" alt="" style="width: 100px; " class="product-img">
+                    <div class="product-name">Ghee(Farm Made Ghee)
+                    </div>
+                    <div class="product-qnt">550g</div>
+
+                    <div class="product-price">375₹</div>
+                   <div class="add-cart-btn">
+                    <!-- <i class="fa-solid fa-minus minus"></i>
+                    <span>0</span>
+                    <i class="fa-solid fa-plus plus"></i> -->
+                    Add Cart
+                </div>
+                </div> 
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+{%endblock content%}

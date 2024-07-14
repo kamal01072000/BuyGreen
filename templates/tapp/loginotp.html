@@ -1,0 +1,44 @@
+<html>
+{% extends 'tapp/index.html' %}
+
+{% block title %}
+Login
+{% endblock title %}
+
+{% block content %}
+
+
+<div class="container" style="margin-top: 10px; min-height:10px;">
+    <div class="row">
+        <div class="col-12">
+            <h4 class="mb-4">Login Hear</h4>
+            <hr style="border-color: rgb(171, 251, 164);">
+        </div>
+    </div>
+</div>
+<section class="py-4 my-5">
+    <div class=" d-flex justify-content-center" style="margin-right:100px;">
+        <div class="row">
+           
+            <div class="col-15">
+                <form method="POST" action="">
+                    {%csrf_token%}
+                <div class="mb-4">
+                    <label for="" class="form-label">Enter Otp</label>
+                    <input type="text" name="otp_code " id=" otp_code " class="form-control">
+                </div>
+                <!-- <div class="mb-4">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" name="password" id="password" class="form-control">
+                </div> -->
+                <button type="submit" class="btn btn-primary">Login</button>
+                <!-- <a href=""><h8>Forgorpassword</h8></a> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</section>    
+
+{% endblock content %}
+
+</html>

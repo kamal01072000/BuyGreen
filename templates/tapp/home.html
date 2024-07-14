@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+{% extends 'tapp/index.html' %}
+{%load static%}
+
+{% block title %}
+product
+{% endblock title %}
+
+{% block content %}
+{%include 'tapp/slider.html'%}
+<main class=" content-section">
+    <section class="restaurent">
+        <div class="container">
+        <div class="item-bar">
+            <div class="farm-count">Buy From Your Near By Farmers</div>
+            <div class="filters">
+                <div class="Store-Near-you"> Store Near You <i class=" fa fa-duotone fa-store"></i></div>
+                <a href="https://deeprooted.co/bangalore" target="_blank"><div class="organic"> <img src="{%static 'images/organicsymbole.png'%}" alt=""> Organic</div></a> 
+                <div class="dairy-products"><img src="{%static 'images/dairy.png'%}" alt=""> Dairy Products</div>
+                <div class="weekly-basket"><i class=" fa fa-sharp fa-cart-shopping "></i> Weekly Basket</div>
+            </div> 
+        </div>
+
+            <div class="restaurent-list">
+                <div class="place">
+                <a href="{%url 'farmproduct'%}" class="place-link">
+                    <div class="list-item">
+                        <div class="item-content">
+                            <div class="top-img">
+                                <img width="250"
+                                height="160"
+                                src="{%static 'images/farm1.jpg'%}" alt="alt" >
+                            </div>
+                            <div class="status" style="background: rgb(6, 168, 44);
+                                color: rgb(255, 255, 255);
+                                border-color: rgb(30, 32, 35);"
+                                ><div class="status-title">Organic</div>
+                            </div>
+                            <div class="place-name">
+                                <div class="name">Kamal Organic</div>
+                                <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                    Greens,Brinjal,Spinache,Tomato,Milk
+                                </div>
+                            </div>
+                            <div class="info-div">
+                                <div class="rating">
+                                <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                <span>4.8</span>
+                                </div>
+                                <div class="location"> <i class="fa fa-location-dot"></i>Redhills Redhills,Redhills</div>
+                            </div>
+                        </div>
+                        <div class="view">
+                            <span class="view-btn">Quick View</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a href="" class="place-link">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img width="250"
+                                    height="160"
+                                    src="{%static 'images/farm9.jpg'%}" alt="alt" >
+                                </div>
+                                <div class="status" style="background: rgb(6, 168, 44);
+                                    color: rgb(255, 255, 255);
+                                    border-color: rgb(30, 32, 35);"
+                                    ><div class="status-title">Organic</div>
+                                </div>
+                                <div class="place-name">
+                                    <div class="name">Akashaya Kalpagam</div>
+                                    <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                        Greens,Brinjal,Spinache,Tomato,Milk
+                                    </div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                    <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                    <span>4.8</span>
+                                    </div>
+                                    <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                </div>
+                            </div>
+                            <div class="view">
+                                <span class="view-btn">Quick View</span>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img width="250"
+                                        height="160"
+                                        src="{%static 'images/farm4.jpg'%}" alt="alt" >
+                                    </div>
+                                    <div class="status" style="background: rgb(6, 168, 44);
+                                        color: rgb(255, 255, 255);
+                                        border-color: rgb(30, 32, 35);"
+                                        ><div class="status-title">Organic</div>
+                                    </div>
+                                    <div class="place-name">
+                                        <div class="name">Auroville Farms</div>
+                                        <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                            Greens,Brinjal,Spinache,Tomato,Milk
+                                        </div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                        <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                        <span>4.8</span>
+                                        </div>
+                                        <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                    </div>
+                                </div>
+                                <div class="view">
+                                    <span class="view-btn">Quick View</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="place">
+                            <a href="" class="place-link">
+                                <div class="list-item">
+                                    <div class="item-content">
+                                        <div class="top-img">
+                                            <img width="250"
+                                            height="160"
+                                            src="{%static 'images/farm6.jpg'%}" alt="alt" >
+                                        </div>
+                                        <div class="status" style="background: rgb(6, 168, 44);
+                                            color: rgb(255, 255, 255);
+                                            border-color: rgb(30, 32, 35);"
+                                            ><div class="status-title">Organic</div>
+                                        </div>
+                                        <div class="place-name">
+                                            <div class="name">VSBN Vijaya Farms </div>
+                                            <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                                Greens,Brinjal,Spinache,Tomato,Milk
+                                            </div>
+                                        </div>
+                                        <div class="info-div">
+                                            <div class="rating">
+                                            <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                            <span>4.8</span>
+                                            </div>
+                                            <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <span class="view-btn">Quick View</span>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <div class="place">
+                                <a href="" class="place-link">
+                                    <div class="list-item">
+                                        <div class="item-content">
+                                            <div class="top-img">
+                                                <img width="250"
+                                                height="160"
+                                                src="{%static 'images/farm7.jpeg'%}" alt="alt" >
+                                            </div>
+                                            <div class="status" style="background: rgb(6, 168, 44);
+                                                color: rgb(255, 255, 255);
+                                                border-color: rgb(30, 32, 35);"
+                                                ><div class="status-title">Organic</div>
+                                            </div>
+                                            <div class="place-name">
+                                                <div class="name">Aditiya Organic</div>
+                                                <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                                    Greens,Brinjal,Spinache,Tomato,Milk
+                                                </div>
+                                            </div>
+                                            <div class="info-div">
+                                                <div class="rating">
+                                                <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                                <span>4.8</span>
+                                                </div>
+                                                <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                            </div>
+                                        </div>
+                                        <div class="view">
+                                            <span class="view-btn">Quick View</span>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="place">
+                                    <a href="" class="place-link">
+                                        <div class="list-item">
+                                            <div class="item-content">
+                                                <div class="top-img">
+                                                    <img width="250"
+                                                    height="160"
+                                                    src="{%static 'images/farm1.jpg'%}" alt="alt" >
+                                                </div>
+                                                <!-- <div class="status" style="background: rgb(6, 168, 44);
+                                                    color: rgb(255, 255, 255);
+                                                    border-color: rgb(30, 32, 35);"
+                                                    ><div class="status-title">Organic</div>
+                                                </div> -->
+                                                <div class="place-name">
+                                                    <div class="name">The Organic Farm</div>
+                                                    <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                                        Greens,Brinjal,Spinache,Tomato,Milk
+                                                    </div>
+                                                </div>
+                                                <div class="info-div">
+                                                    <div class="rating">
+                                                    <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                                    <span>4.8</span>
+                                                    </div>
+                                                    <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                                </div>
+                                            </div>
+                                            <div class="view">
+                                                <span class="view-btn">Quick View</span>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="place">
+                                        <a href="" class="place-link">
+                                            <div class="list-item">
+                                                <div class="item-content">
+                                                    <div class="top-img">
+                                                        <img width="250"
+                                                        height="160"
+                                                        src="{%static 'images/farm3.jpg'%}" alt="alt" >
+                                                    </div>
+                                                    <!-- <div class="status" style="background: rgb(6, 168, 44);
+                                                        color: rgb(255, 255, 255);
+                                                        border-color: rgb(30, 32, 35);"
+                                                        ><div class="status-title">Organic</div>
+                                                    </div> -->
+                                                    <div class="place-name">
+                                                        <div class="name">AAk Greens</div>
+                                                        <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                                            Greens,Brinjal,Spinache,Tomato,Milk
+                                                        </div>
+                                                    </div>
+                                                    <div class="info-div">
+                                                        <div class="rating">
+                                                        <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                                        <span>4.8</span>
+                                                        </div>
+                                                        <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                                    </div>
+                                                </div>
+                                                <div class="view">
+                                                    <span class="view-btn">Quick View</span>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="place">
+                                            <a href="" class="place-link">
+                                                <div class="list-item">
+                                                    <div class="item-content">
+                                                        <div class="top-img">
+                                                            <img width="250"
+                                                            height="160"
+                                                            src="{%static 'images/farm4.jpg'%}" alt="alt" >
+                                                        </div>
+                                                        <!-- <div class="status" style="background: rgb(6, 168, 44);
+                                                            color: rgb(255, 255, 255);
+                                                            border-color: rgb(30, 32, 35);"
+                                                            ><div class="status-title">Organic</div>
+                                                        </div> -->
+                                                        <div class="place-name">
+                                                            <div class="name">Vanam Green vegs</div>
+                                                            <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                                                Greens,Brinjal,Spinache,Tomato,Milk
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-div">
+                                                            <div class="rating">
+                                                            <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                                            <span>4.8</span>
+                                                            </div>
+                                                            <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="view">
+                                                        <span class="view-btn">Quick View</span>
+                                                    </div>
+                                                </div>
+                                                </a>
+                                            </div>
+                                            <div class="place">
+                                                <a href="" class="place-link">
+                                                    <div class="list-item">
+                                                        <div class="item-content">
+                                                            <div class="top-img">
+                                                                <img width="250"
+                                                                height="160"
+                                                                src="{%static 'images/farm8.jpg'%}" alt="alt" >
+                                                            </div>
+                                                            <div class="status" style="background: rgb(6, 168, 44);
+                                                                color: rgb(255, 255, 255);
+                                                                border-color: rgb(30, 32, 35);"
+                                                                ><div class="status-title">Organic</div>
+                                                            </div>
+                                                            <div class="place-name">
+                                                                <div class="name">Kalpagam farms</div>
+                                                                <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                                                    Greens,Brinjal,Spinache,Tomato,Milk
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-div">
+                                                                <div class="rating">
+                                                                <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                                                <span>4.8</span>
+                                                                </div>
+                                                                <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="view">
+                                                            <span class="view-btn">Quick View</span>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                                </div>
+<div class="place">
+                <a href="" class="place-link">
+                    <div class="list-item">
+                        <div class="item-content">
+                            <div class="top-img">
+                                <img width="250"
+                                height="160"
+                                src="{%static 'images/farm9.jpg'%}" alt="alt" >
+                            </div>
+                            <div class="status" style="background: rgb(6, 168, 44);
+                                color: rgb(255, 255, 255);
+                                border-color: rgb(30, 32, 35);"
+                                ><div class="status-title">Organic</div>
+                            </div>
+                            <div class="place-name">
+                                <div class="name">VKB farm</div>
+                                <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                    Greens,Brinjal,Spinache,Tomato,Milk
+                                </div>
+                            </div>
+                            <div class="info-div">
+                                <div class="rating">
+                                <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                <span>4.8</span>
+                                </div>
+                                <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                            </div>
+                        </div>
+                        <div class="view">
+                            <span class="view-btn">Quick View</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="place">
+                    <a href="" class="place-link">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img width="250"
+                                    height="160"
+                                    src="{%static 'images/farm2.jpg'%}" alt="alt" >
+                                </div>
+                                <div class="status" style="background: rgb(6, 168, 44);
+                                    color: rgb(255, 255, 255);
+                                    border-color: rgb(30, 32, 35);"
+                                    ><div class="status-title">Organic</div>
+                                </div>
+                                <div class="place-name">
+                                    <div class="name">Vaksana Farms </div>
+                                    <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                        Greens,Brinjal,Spinache,Tomato,Milk
+                                    </div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                    <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                    <span>4.8</span>
+                                    </div>
+                                    <div class="location"> <i class="fa fa-location-dot"></i>Redhills</div>
+                                </div>
+                            </div>
+                            <div class="view">
+                                <span class="view-btn">Quick View</span>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                                                                                                                                                    
+
+                <div class="place">
+                    <a href="" class="place-link">
+                        <div class="list-item">
+                            <div class="item-content">
+                                <div class="top-img">
+                                    <img width="250"
+                                    height="160"
+                                    src="{%static 'images/farm2.jpg'%}" alt="alt" >
+                                </div>
+                                <!-- <div class="status" style="background: rgb(6, 168, 44);
+                                    color: rgb(255, 255, 255);
+                                    border-color: rgb(30, 32, 35);"
+                                    ><div class="status-title">Organic</div>
+                                </div> -->
+                                <div class="place-name">
+                                    <div class="name">Nature Fresh Farms</div>
+                                    <div class="farm-items" title="Spinache,Tomato,Milk">
+                                        Spinache,Tomato,Milk
+                                    </div>
+                                </div>
+                                <div class="info-div">
+                                    <div class="rating">
+                                    <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                    <span>4.8</span>
+                                    </div>
+                                    <div class="location"> <i class="fa fa-location-dot"></i>Minjur</div>
+                                </div>
+                            </div>
+                            <div class="view">
+                                <span class="view-btn">Quick View</span>
+                            </div>
+                        </div>
+                        </a>
+                    </div><div class="place">
+                        <a href="" class="place-link">
+                            <div class="list-item">
+                                <div class="item-content">
+                                    <div class="top-img">
+                                        <img width="250"
+                                        height="160"
+                                        src="{%static 'images/farm3.jpg'%}" alt="alt" >
+                                    </div>
+                                    <div class="status" style="background: rgb(6, 168, 44);
+                                        color: rgb(255, 255, 255);
+                                        border-color: rgb(30, 32, 35);"
+                                        ><div class="status-title">Organic</div>
+                                    </div>
+                                    <div class="place-name">
+                                        <div class="name">Paalaar Urban Farms</div>
+                                        <div class="farm-items" title="Gee,egg's,Milk">
+                                            Gee,Milk,Egg's
+                                        </div>
+                                    </div>
+                                    <div class="info-div">
+                                        <div class="rating">
+                                        <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                        <span>4.8</span>
+                                        </div>
+                                        <div class="location"> <i class="fa fa-location-dot"></i>Ponneri</div>
+                                    </div>
+                                </div>
+                                <div class="view">
+                                    <span class="view-btn">Quick View</span>
+                                </div>
+                            </div>
+                            </a>
+                        </div><div class="place">
+                            <a href="" class="place-link">
+                                <div class="list-item">
+                                    <div class="item-content">
+                                        <div class="top-img">
+                                            <img width="250"
+                                            height="160"
+                                            src="{%static 'images/farm4.jpg'%}" alt="alt" >
+                                        </div>
+                                        <div class="status" style="background: rgb(6, 168, 44);
+                                            color: rgb(255, 255, 255);
+                                            border-color: rgb(30, 32, 35);"
+                                            ><div class="status-title">Organic</div>
+                                        </div>
+                                        <div class="place-name">
+                                            <div class="name">Birch Wood Farm</div>
+                                            <div class="farm-items" title="Greens,Brinjal,Spinache,Milk">
+                                                Beens,Brinjal,Spinache,Avacado,Milk,okar,Ladisfinger
+                                            </div>
+                                        </div>
+                                        <div class="info-div">
+                                            <div class="rating">
+                                            <span class="icon-star"><i class="fa-sharp fa-solid fa-star"></i></span>
+                                            <span>4.8</span>
+                                            </div>
+                                            <div class="location"> <i class="fa fa-location-dot"></i>Thiruvallur</div>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <span class="view-btn">Quick View</span>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+               
+                
+            </div>
+        </div>
+    </section>
+</main>
+
+{%endblock content %}
+
+</html>
